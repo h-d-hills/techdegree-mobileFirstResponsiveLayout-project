@@ -1,36 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Henry Hills</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Henry Hills</title>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-    <header>
-        <h1>Henry Hills</h1>
-        <ul>
-            <li>Home</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
-        </ul>
-    </header>
+    <body>
 
-    <main>
-        <img src="images/responsive-layout-profile.png" alt="A picture of me, Henry" title="This doesn't look like me at all.">
-        <p>Hey! My name's Henry, and I'm an aspiring front-end web developer. At least, I hope I am, considering how much this program costs. I'm not done with it yet but I'm looking forward to putting my skills to use in the future!</p>
+        <header>
+            <h1>Henry Hills</h1>
+            <ul>
+                <li>Home</li>
+                <li>Portfolio</li>
+                <li>Contact</li>
+            </ul>
+        </header>
 
-        <h2>Portfolio</h2>
+        <main>
+            <div>
+                <img src="images/responsive-layout-profile.png" alt="A picture of me, Henry" title="This doesn't look like me at all." class="profile-img">
+                <p>Hey! My name's Henry, and I'm an aspiring front-end web developer. At least, I hope I am, considering how much this program costs. I'm not done with it yet but I'm looking forward to putting my skills to use in the future!</p>
+            </div>
 
-        <img src="images/portfolio-1.png" alt="Marketing Page" title="A marketing page I made">
-        <h3>Marketing Page</h3>
-        <p>This project shows the front page of a marketing website for a pyramid scheme I'm working on. Don't tell the feds!</p>
-    </main>
+            <h2 class="new-part">Portfolio</h2>
 
-    <footer>
+            <div class="card">
+                <img src="images/portfolio-1.png" alt="Marketing Page" title="A marketing page I made" class="card-img">
+                <h3>Marketing Page</h3>
+                <p>This is the front page of the marketing website for a pyramid scheme I'm working on. Don't tell the feds!</p>
+            </div>
 
-    </footer>
-</body>
+            <div class="card">
+                <img src="images/portfolio-2.png" alt="Search Page" title="A search page I developed" class="card-img">
+                <h3>Search Page</h3>
+                <p>This searches through a database to find content the user is looking for. Dark web compatibility coming soon.</p>
+            </div>
+            
+            <div class="card">
+                <img src="images/portfolio-3.png" alt="Travel App" title="A travel app I developed" class="card-img">
+                <h3>Travel App</h3>
+                <p>This app compares travel times based on different methods of travel and returns the best one. Useful for fleeing the country.</p>
+            </div>
+
+            <div class="card">
+                <img src="images/portfolio-4.png" alt="Map of Favorite Spots" title="A map of cool places I made" class="card-img">
+                <h3>Map of Favorite Spots</h3>
+                <p>This uses mapping APIs to map out my favorite places in the city for a DIY walking tour. Look over there - a dry ice factory! Good place to get some thinking done.</p>
+            </div>
+
+            <div class="card">
+                <img src="images/portfolio-5.png" alt="Photo Gallery" title="A photo gallery I made" class="card-img">
+                <h3>Photo Gallery</h3>
+                <p>This allows the user to easily and intuitively navigate through a collection of photographs of me hanging out with all two of my friends.</p>
+            </div>
+
+            <div class="card">
+                <img src="images/portfolio-6.png" alt="Calculator" title="A calculator (recreational use only)" class="card-img">
+                <h3>Calculator</h3>
+                <p>Numbers are fun! Use this program to make numbers make different numbers. I swear it gets fun eventually.</p>
+            </div>
+
+            <h2 class="new-part">Contact</h2>
+            <p>Want to chat? Have any questions? Reach me at the links below!</p>
+            <p>Phone: (***) ***-****</p>
+            <p>Email: 
+                <ul>
+                    <li>henry.d.hills@gmail.com</li>
+                    <li>Or just click <a href="mailto:henry.d.hills@gmail.com?subject=Hey,%20Henry!">this link</a>!</li>
+                </ul>
+            </p>
+        </main>
+
+        <footer>
+            <h2>Henry Hills</h2>
+            <a href="#"></a>
+            <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </footer>
+    </body>
 </html>
