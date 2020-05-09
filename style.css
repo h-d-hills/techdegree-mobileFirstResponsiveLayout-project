@@ -15,6 +15,7 @@ main,
 .main-footer {
     width: 90%;
     margin: 0 auto;
+    max-width: 1150px;
 }
 
 .card-img {
@@ -247,5 +248,56 @@ footer h4 {
 
     .footerList li:last-child {
         padding-right: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .greeting p {
+        font-size: 1.5em;
+    }
+
+    .main {
+        overflow: hidden;
+    }
+
+    .card-img {
+        padding-top: 1em;
+    }
+
+    .card {
+        width: 30%;
+        float: none;
+        margin: 0;
+        padding: 0;
+        height: 23em;
+    }
+
+    .card-first,
+    .card-second,
+    .card-third {
+        display: inline-block;
+    }
+
+    .card-fourth,
+    .card-fifth,
+    .card-sixth {
+        display: inline-block;
+    }
+
+    .card-first,
+    .card-fourth {
+        float: left;
+        margin-left: 1em;
+    }
+
+    .card-third,
+    .card-sixth {
+        float: right;
+        margin-right: 1em;
+    }
+
+    .first-three {
+        margin-bottom: 2em;
     }
 }
