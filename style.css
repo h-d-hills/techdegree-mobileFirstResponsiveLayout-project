@@ -1,8 +1,20 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
 body {
+    background-color: #ecebeb;
+}
+
+main,
+.main-footer {
     width: 90%;
     margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #000;
 }
 
 .card-img {
@@ -10,6 +22,7 @@ body {
 }
 
 .profile-img {
+    margin-top: 184px;
     width: 70%;
 }
 
@@ -19,16 +32,131 @@ div {
 
 .new-part {
     text-align: center;
+    padding-top: 4em;
+    padding-bottom: 1em;;
 }
 
 .card {
     padding: 1em 0 1em 0;
-    margin: 1em 0;
+    margin: 1em 0 2em 0;
     border: 2px solid rgba(0, 0, 0,.2);
     border-radius: 0.5em;
     transition-duration: 0.5s;
+    background-color: #fff;
+    color: rgba(0, 0, 0,.9);
+    box-shadow: 0 5px 7px rgba(0, 0, 0,.7);
+}
+
+.card p {
+    width: 90%;
+    margin: 0 auto;
 }
 
 .card:hover {
     transform: scale(1.025);
+    color: #000;
+    border: 2px solid #000;
+    box-shadow: 7px 5px 7px rgba(0, 0, 0,.7);
+}
+
+.greeting,
+.goodbye,
+footer,
+a,
+.email-options a,
+footer h4 {
+    text-decoration: none;
+    color: rgba(0, 0, 0,.7);
+}
+
+footer a,
+header a {
+    font-weight: 700;
+}
+
+footer a:hover,
+header a:hover {
+    color: #000;
+}
+
+header {
+    padding-top: 1.25em;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 1px 7px rgba(0, 0, 0,.7);
+    top: 0;
+}
+
+header h1,
+header ul {
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+    padding-right: 2em;
+}
+
+header li {
+    display: block;
+    line-height: 2em;
+}
+
+header h1 {
+    margin-top: 0;
+}
+
+.email-plug {
+    margin-top: 0;
+    padding-bottom: 3em;
+    margin: 0 auto;
+    width: 234px;
+    overflow: hidden;
+}
+
+.email {
+    float: left;
+}
+
+.email-options {
+    text-align: left;
+    float: right;
+    padding: 0;
+    padding-top: 0.25em;
+    line-height: 0.5em;
+}
+
+.phone,
+.invite {
+    margin-bottom: 0;
+}
+
+footer a,
+.new-part {
+    text-transform: uppercase;
+}
+
+footer {
+    clear: both;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+footer a {
+    float: right;
+    padding-top: 1.5em;
+    text-decoration: none;
+}
+
+footer h2 {
+    float: left;
+}
+
+footer h4 {
+    clear: both;
+    color: rgba(0, 0, 0,.7);
+    padding-bottom: .5em;
+    font-weight: 300;
 }

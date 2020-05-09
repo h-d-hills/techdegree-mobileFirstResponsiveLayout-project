@@ -13,19 +13,19 @@
         <header>
             <h1>Henry Hills</h1>
             <ul>
-                <li>Home</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
+                <li><a href="#top">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </header>
 
         <main>
-            <div>
+            <div class="greeting">
                 <img src="images/responsive-layout-profile.png" alt="A picture of me, Henry" title="This doesn't look like me at all." class="profile-img">
-                <p>Hey! My name's Henry, and I'm an aspiring front-end web developer. At least, I hope I am, considering how much this program costs. I'm not done with it yet but I'm looking forward to putting my skills to use in the future!</p>
+                <p>Hey! My name's Henry, and I'm an aspiring front-end web developer. At least, I hope I am, considering how much this program costs. I'm not done with it yet, but I'm looking forward to putting my web-developing skills to use in the future!</p>
             </div>
 
-            <h2 class="new-part">Portfolio</h2>
+            <h2 class="new-part" id="portfolio">Portfolio</h2>
 
             <div class="card">
                 <img src="images/portfolio-1.png" alt="Marketing Page" title="A marketing page I made" class="card-img">
@@ -48,7 +48,7 @@
             <div class="card">
                 <img src="images/portfolio-4.png" alt="Map of Favorite Spots" title="A map of cool places I made" class="card-img">
                 <h3>Map of Favorite Spots</h3>
-                <p>This uses mapping APIs to map out my favorite places in the city for a DIY walking tour. Look over there - a dry ice factory! Good place to get some thinking done.</p>
+                <p>This uses mapping APIs to map out my favorite places in the city for a DIY walking tour. Look over there - a dry ice factory! A good place to get some thinking done.</p>
             </div>
 
             <div class="card">
@@ -60,28 +60,34 @@
             <div class="card">
                 <img src="images/portfolio-6.png" alt="Calculator" title="A calculator (recreational use only)" class="card-img">
                 <h3>Calculator</h3>
-                <p>Numbers are fun! Use this program to make numbers make different numbers. I swear it gets fun eventually.</p>
+                <p>Numbers are fun! Use this program to make numbers make different numbers. I swear it gets entertaining eventually.</p>
             </div>
 
-            <h2 class="new-part">Contact</h2>
-            <p>Want to chat? Have any questions? Reach me at the links below!</p>
-            <p>Phone: (***) ***-****</p>
-            <p>Email: 
-                <ul>
-                    <li>henry.d.hills@gmail.com</li>
-                    <li>Or just click <a href="mailto:henry.d.hills@gmail.com?subject=Hey,%20Henry!">this link</a>!</li>
-                </ul>
-            </p>
+            <div class="goodbye">
+                <h2 class="new-part" id="contact">Contact</h2>
+                <p class="invite">Want to chat? Have any questions? Reach me at the addresses below!</p>
+                <p class="phone"><strong>Phone:</strong> +1 (***) ***-****</p>
+                <div class="email-plug">
+                    <p class="email"><strong>Email:</strong></p>
+                    <div class="email-options">
+                        <p>henry.d.hills@gmail.com</p>
+                        <p>Or just click <a href="mailto:henry.d.hills@gmail.com?subject=Hey,%20Henry!"><strong>this link</strong></a>!</p>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer>
-            <h2>Henry Hills</h2>
-            <a href="#"></a>
-            <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
+            <div class="main-footer"> 
+                <h2>Henry Hills</h2>
+                <a href="#top">Back to Top</a>
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <h4>&copy;2020, Henry Hills</h4>
+             </div>
         </footer>
     </body>
 </html>
