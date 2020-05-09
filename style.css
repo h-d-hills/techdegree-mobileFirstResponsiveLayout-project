@@ -23,7 +23,6 @@ main,
 }
 
 .profile-img {
-    margin-top: 184px;
     width: 70%;
 }
 
@@ -85,15 +84,14 @@ header a {
 footer a:hover,
 header a:hover,
 .email-options a:hover {
+    transition-duration: .5s;
     color: #000;
 }
 
 header {
     padding-top: 1.25em;
     background-color: rgba(255,255,255,0.9);
-    position: fixed;
     width: 100%;
-    z-index: 1000;
     box-shadow: 0 1px 7px rgba(0, 0, 0,.7);
     top: 0;
 }
@@ -188,6 +186,10 @@ footer h4 {
         overflow: hidden;
     }
 
+    .profile-img {
+        margin-top: 184px;
+    }
+
     .card {
         width: 46%;
         margin-bottom: 1.5em;
@@ -205,6 +207,11 @@ footer h4 {
     .card-sixth {
         float: right;
         margin-right: 1em;
+    }
+
+    header {
+        position: fixed;
+        z-index: 1000;
     }
 
     header li {
@@ -252,6 +259,21 @@ footer h4 {
 }
 
 @media (min-width: 1024px) {
+
+    header {
+        display: inline;
+        overflow: hidden;
+    }
+
+    header ul {
+        float: right;
+        margin-top: 0;
+    }
+
+    header h1 {
+        float: left;
+        margin-left: 1em;
+    }
 
     .greeting p {
         font-size: 1.5em;
