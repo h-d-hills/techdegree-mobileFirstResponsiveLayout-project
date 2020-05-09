@@ -50,12 +50,13 @@ div {
 .card p {
     width: 90%;
     margin: 0 auto;
+    height: 5em;
 }
 
 .card:hover {
     transform: scale(1.025);
     color: #000;
-    border: 2px solid #000;
+    border: 2px solid rgba(0, 0, 0,.8);
     box-shadow: 7px 5px 7px rgba(0, 0, 0,.7);
 }
 
@@ -69,13 +70,18 @@ footer h4 {
     color: rgba(0, 0, 0,.7);
 }
 
+.greeting p {
+    font-size: larger;
+}
+
 footer a,
 header a {
     font-weight: 700;
 }
 
 footer a:hover,
-header a:hover {
+header a:hover,
+.email-options a:hover {
     color: #000;
 }
 
@@ -134,7 +140,8 @@ header h1 {
 }
 
 footer a,
-.new-part {
+.new-part,
+header li {
     text-transform: uppercase;
 }
 
@@ -159,4 +166,69 @@ footer h4 {
     color: rgba(0, 0, 0,.7);
     padding-bottom: .5em;
     font-weight: 300;
+}
+
+.footerList {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    main {
+        overflow: hidden;
+    }
+
+    .card {
+        width: 46%;
+        margin-bottom: 1.5em;
+    }
+
+    .card-first,
+    .card-third,
+    .card-fifth {
+        float: left;
+        margin-left: 1em;
+    }
+
+    .card-second,
+    .card-fourth,
+    .card-sixth {
+        float: right;
+        margin-right: 1em;
+    }
+
+    header li {
+        display: inline-block;
+    }
+
+    .greeting {
+        overflow: hidden;
+    }
+
+    .greeting p {
+        display: block;
+        float: left;
+        margin-top: 184px;
+        text-align: left;
+        width: 60%;
+    }
+
+    .profile-img {
+        margin-top: 160px;
+        width: 40%;
+        float: right;
+    }
+
+    .goodbye {
+        margin-top: 75em;
+    }
+
+    .backToTop {
+        display: none;
+    }
+
+    .footerList {
+        border: 1px solid red;
+        display: block;
+    }
 }
