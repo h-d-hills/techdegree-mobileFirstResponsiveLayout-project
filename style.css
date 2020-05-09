@@ -45,6 +45,7 @@ div {
     background-color: #fff;
     color: rgba(0, 0, 0,.9);
     box-shadow: 0 5px 7px rgba(0, 0, 0,.7);
+    opacity: .8;
 }
 
 .card p {
@@ -58,6 +59,7 @@ div {
     color: #000;
     border: 2px solid rgba(0, 0, 0,.8);
     box-shadow: 7px 5px 7px rgba(0, 0, 0,.7);
+    opacity: 1;
 }
 
 .greeting,
@@ -87,7 +89,7 @@ header a:hover,
 
 header {
     padding-top: 1.25em;
-    background-color: #fff;
+    background-color: rgba(255,255,255,0.9);
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -139,6 +141,10 @@ header h1 {
     margin-bottom: 0;
 }
 
+.goodbye {
+    clear: both;
+}
+
 footer a,
 .new-part,
 header li {
@@ -153,8 +159,11 @@ footer {
 
 footer a {
     float: right;
-    padding-top: 1.5em;
     text-decoration: none;
+}
+
+.backToTop {
+    padding-top: 1.5em;
 }
 
 footer h2 {
@@ -219,16 +228,24 @@ footer h4 {
         float: right;
     }
 
-    .goodbye {
-        margin-top: 75em;
-    }
-
     .backToTop {
         display: none;
     }
 
     .footerList {
-        border: 1px solid red;
-        display: block;
+        float: right;
+        display: inline-block;
+        margin-top: 27px;
+    }
+
+    .footerList li {
+        display: inline-block;
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 3em;
+    }
+
+    .footerList li:last-child {
+        padding-right: 0;
     }
 }
