@@ -234,7 +234,7 @@ footer h4 {
 
     .footerList {
         float: right;
-        display: inline-block;
+        display: block;
         margin-top: 27px;
     }
 
